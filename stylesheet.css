@@ -31,8 +31,8 @@ body {
     transition: .3s ease;
 }
 
-.off-screen-menu:active {
-    right: 0;
+.off-screen-menu.active {
+    right: 0px;
 }
 
 nav {
@@ -51,7 +51,7 @@ nav {
 .ham-menu span {
     height: 5px;
     width: 100%;
-    background-color: violet;
+    background-color: #ffffff;
     border-radius: 25px;
     position: absolute;
     top: 50%;
@@ -70,7 +70,7 @@ nav {
 
 .ham-menu.active span:nth-child(1) {
     top: 50%;
-    transform: translate(-50%, -50%,) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .ham-menu.active span:nth-child(2) {
@@ -79,7 +79,7 @@ nav {
 
 .ham-menu.active span:nth-child(3) {
     top: 50%;
-    transform: translate(-50%, 50%,) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 
