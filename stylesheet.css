@@ -34,8 +34,42 @@ body {
     color: #ffffff;
 }
 
-.listofstuff {
+.list__burgermenu {
     list-style-type: none;
+    cursor: pointer;
+}
+
+#hjem:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    transition: .3;
+    background-color: #ffffff;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+#hjem:hover:after{
+    transform: scaleX(1);
+}
+
+
+#omOs:hover {
+    text-decoration: underline;
+    transition: .3 ease-in;
+}
+
+#blivFrivillig:hover {
+    text-decoration: underline;
+    transition: .3 ease-in;
+}
+
+#headSpaceFamily:hover {
+    text-decoration: underline;
+    transition: .3 ease-in;
 }
 
 
@@ -48,6 +82,7 @@ nav {
     display: flex;
     background-color: #81b428;
 }
+
 
 .ham-menu {
     height: 50px;

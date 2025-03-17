@@ -8,3 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
         offScreenMenu.classList.toggle('active');
     });
 });
+
+
+const button = document.getElementById('omOs')
+
+button.addEventListener("click", changePage)
+
+function changePage(){
+    window.location.href = 'omOs.html'
+}
