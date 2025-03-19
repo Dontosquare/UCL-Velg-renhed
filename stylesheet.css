@@ -143,6 +143,7 @@ nav {
     border-radius: 15px;
     background-color: #ffffff;
     text-align: center;
+    background-image: url(baggrund.png);
 }
 
 .textbox__home__2 {
@@ -151,6 +152,7 @@ nav {
     border-radius: 15px;
     background-color: #ffffff;
     text-align: center;
+    background-image: url(baggrund.png);
 }
 
 .textbox__home__3 {
@@ -159,6 +161,7 @@ nav {
     border-radius: 15px;
     background-color: #ffffff;
     text-align: center;
+    background-image: url(baggrund.png);
 }
 
 .footer {
