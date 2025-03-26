@@ -36,31 +36,32 @@
     <!-- Meld dig til -->
     <div class="container__form">
         <div class="title">Bliv frivillig her</div>
-        <form action="#">
+        <div id="error"></div>
+        <form id="form" action="/">
             <div class="user-details">
                 <div class="input-box">
-                    <span class="details">Fulde navn</span>
-                    <input type="text" placeholder="Indtast dit navn" required>
+                    <span class="details" for="name">Fulde navn</span>
+                    <input type="text" id="name" placeholder="Indtast dit navn">
                 </div>
                 <div class="input-box">
-                    <span class="details">Brugernavn</span>
-                    <input type="text" placeholder="Indtast dit brugernavn" required>
+                    <span class="details" for="username">Brugernavn</span>
+                    <input type="text" id="username" placeholder="Indtast dit brugernavn">
                 </div>
                 <div class="input-box">
-                    <span class="details">Email</span>
-                    <input type="text" placeholder="Indtast din email" required>
+                    <span class="details" for="email">Email</span>
+                    <input type="text" id="email" placeholder="Indtast din email">
                 </div>
                 <div class="input-box">
-                    <span class="details">Telefon</span>
-                    <input type="text" placeholder="Indtast dit telefon nummer" required>
+                    <span class="details" for="phone">Telefon</span>
+                    <input type="text" id="phone" placeholder="Indtast dit telefon nummer">
                 </div>
                 <div class="input-box">
-                    <span class="details">Kodeord</span>
-                    <input type="text" placeholder="Indtast dit kodeord" required>
+                    <span class="details" for="password">Kodeord</span>
+                    <input type="text" id="password" placeholder="Indtast dit kodeord">
                 </div>
                 <div class="input-box">
-                    <span class="details">Bekræft kodeord</span>
-                    <input type="text" placeholder="Bekræft dit kodeord" required>
+                    <span class="details" for="confirmPassword">Bekræft kodeord</span>
+                    <input type="text" id="confirmPassword" placeholder="Bekræft dit kodeord">
                 </div>
             </div>
             <div class="gender-details">
