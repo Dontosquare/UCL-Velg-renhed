@@ -107,22 +107,52 @@ nav {
     border-radius: 5px;
     margin-top: 100px; /*ret til med placering*/
     margin-bottom: 100px; /*ret til med placering*/
+    font-family: Raleway;
+    
 }
 
 .container__form .title {
     font-size: 25px;
     font-weight: 500;
     position: relative;
-    margin-right: 18%;
 }
 
 .container__form .title::before{
     content: '';
     position: absolute;
+    left: 0;
+    bottom: 0;
     height: 3px;
     width: 30px;
     background: white;
+}
 
+.container__form form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .user-details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 15px;
+    font-size: 16px;
 }
 
 /* textbox */ 
