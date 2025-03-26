@@ -15,6 +15,8 @@ body {
     font-size: 30px;
 }
 
+
+/* Burger menu */
 .off-screen-menu {
     background-color: #81b428;
     height: 100vh;
@@ -89,6 +91,7 @@ nav {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
+
 
 
 .textbox__home {
