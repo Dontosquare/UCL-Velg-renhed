@@ -124,7 +124,7 @@ nav {
     bottom: 0;
     height: 3px;
     width: 30px;
-    background: white;
+    background: #EF27A6;
 }
 
 .container__form form .user-details {
@@ -153,6 +153,34 @@ form .user-details .input-box{
     border: 1px solid gray;
     padding-left: 15px;
     font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #EF27A6;
+}
+
+form .gender-details .gender-titles{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between; 
+}
+
+.gender-details .category label{
+
+}
+
+.gender-details .category .dot{
+    
 }
 
 /* textbox */ 
