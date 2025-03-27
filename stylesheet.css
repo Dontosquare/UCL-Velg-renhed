@@ -15,8 +15,11 @@ body {
     font-size: 30px;
 }
 #kampagne-logo {
-    width: 200px;
-    width: 200px;
+    width: 20%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 /* Burger menu */
