@@ -9,6 +9,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 })
 
+document.getElementById('hjem').onclick = function () {
+    location.href = 'https://headspace.dk/'
+}
+document.getElementById('tnt').onclick = function () {
+    location.href = 'https://headspace.dk/the-international-department/'
+}
+document.getElementById('headspaceFam').onclick = function () {
+    location.href = 'https://headspace.dk/headspace-family/'
+}
+document.getElementById('stoet').onclick = function () {
+    location.href = 'https://headspace.dk/stoet/'
+}
+
 /*
 const naming = document.getElementById('name')
 const username = document.getElementById('username')
