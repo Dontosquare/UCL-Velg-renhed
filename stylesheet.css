@@ -8,18 +8,20 @@ body {
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-end;
     color: white;
     background-image: linear-gradient(to right,#81b428, #ffffff);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 30px;
+    padding-left: 7%;
 }
 #kampagne-logo {
     width: 20%;
     height: 20%;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-end;
+    
 }
 
 /* Burger menu */
