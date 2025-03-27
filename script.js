@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-const name = document.getElementById('name')
+/*
+const naming = document.getElementById('name')
 const username = document.getElementById('username')
 const email = document.getElementById('email')
 const phone = document.getElementById('phone')
@@ -22,7 +23,7 @@ const errorElement = document.getElementById('error')
 document.addEventListener('DOMContentLoaded', () => {
 form.addEventListener('submit', (e) => {
     let messages = []
-    if (name.value === '' || name.value == null) {
+    if (naming.value === '' || naming.value == null) {
         messages.push('Venligst udfyld dette felt')
     }
 
@@ -30,7 +31,7 @@ form.addEventListener('submit', (e) => {
         messages.push('Kodeordet skal være mere end 6 tegn')
     }
 
-    if (password.value.lenght >= 6) {
+    if (password.value.lenght >= 20) {
         messages.push('Kodeordet skal være mindre end 20 tegn')
     }
 
@@ -43,3 +44,5 @@ form.addEventListener('submit', (e) => {
     errorElement.innerText = messages.join(', ')
     }
 })})
+
+*/

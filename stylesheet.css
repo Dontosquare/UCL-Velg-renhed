@@ -92,7 +92,7 @@ nav {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-/*tilmeldelses formen*/
+/*tilmeldelses formen er i pausetilstand
 .container__form {
     display: flex;
     justify-content: center;
@@ -105,8 +105,8 @@ nav {
     color: #ffffff;
     padding: 25px 30px;
     border-radius: 5px;
-    margin-top: 100px; /*ret til med placering*/
-    margin-bottom: 100px; /*ret til med placering*/
+    margin-top: 100px; 
+    margin-bottom: 100px;
     font-family: Raleway;
     
 }
