@@ -7,8 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hamMenu.classList.toggle('active');
         offScreenMenu.classList.toggle('active');
     });
-});
-
+})
 
 /*
 const naming = document.getElementById('name')
