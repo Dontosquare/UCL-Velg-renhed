@@ -11,21 +11,6 @@ body {
 }
 
 
-#headspace-logo {
-    width: 20%;
-    height: 20%;
-    display: flex;
-}
-
-#kampagne-logo {
-    width: 20%;
-    height: 20%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-
 
 /* Burger menu */
 .off-screen-menu {
