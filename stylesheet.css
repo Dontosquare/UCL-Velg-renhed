@@ -132,6 +132,16 @@ nav {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+#billede_top {
+    display: flex;
+    justify-content: center;
+}
+
+.textbox__grøn__top {
+    background-color: #81b428;
+    color: white;
+}
+
 /*tilmeldelses formen er i pausetilstand
 .container__form {
     display: flex;
