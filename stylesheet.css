@@ -16,6 +16,12 @@ body {
     font-size: 30px;
     padding-left: 7%;
 }
+#headspace-logo {
+    width: 20%;
+    height: 20%;
+    display: flex;
+}
+
 #kampagne-logo {
     width: 20%;
     height: 20%;
