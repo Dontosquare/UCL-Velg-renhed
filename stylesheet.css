@@ -26,12 +26,11 @@ body {
 
 /* Burger menu */
 .off-screen-menu {
-    background-color: #81b428;
+    background-color: white;
     height: 100vh;
     width: 100%;
     max-width: 450px;
     position: fixed;
-    top: 0;
     right: -450px;
     display: flex;
     flex-direction: column;
@@ -48,10 +47,11 @@ body {
 .listofstuff {
     list-style-type: none;
     cursor: pointer;
+    color: #81b428;
 }
 
 #hjem {
-    margin: 10%;
+    margin: 20%;
 }
 
 #hjem:hover {
@@ -59,7 +59,7 @@ body {
 }
 
 #tnt {
-    margin: 10%;
+    margin: 20%;
 }
 
 #tnt:hover {
@@ -67,7 +67,7 @@ body {
 }
 
 #headspaceFam {
-    margin: 10%;
+    margin: 20%;
 }
 
 #headspaceFam:hover {
@@ -75,7 +75,7 @@ body {
 }
 
 #stoet {
-    margin: 10%;
+    margin: 20%;
 }
 
 #stoet:hover {
@@ -92,7 +92,7 @@ body {
 nav {
     padding: 1rem;
     display: flex;
-    background-color: #81b428;
+    background-color: white;
 }
 
 .ham-menu {
@@ -105,7 +105,7 @@ nav {
 .ham-menu span {
     height: 5px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #81b428;
     border-radius: 25px;
     position: absolute;
     top: 50%;
