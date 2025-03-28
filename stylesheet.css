@@ -8,24 +8,15 @@ body {
 
 .header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    width: 100%;
 }
 
-
-#headspace-logo {
-    width: 20%;
-    height: 20%;
-    display: flex;
+#logo {
+    width: 70%;
 }
-
-#kampagne-logo {
-    width: 20%;
-    height: 20%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-
 
 /* Burger menu */
 .off-screen-menu {
