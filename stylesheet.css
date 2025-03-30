@@ -8,9 +8,15 @@ body {
 
 .header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    width: 100%;
 }
 
-
+#logo {
+    width: 80%;
+}
 
 /* Burger menu */
 .off-screen-menu {
