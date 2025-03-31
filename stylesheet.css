@@ -139,3 +139,17 @@ nav {
     background-color: #81b428;
     color: white;
 }
+
+.paragraph__headline__regular {
+    color: #D4257D;
+    font-family: "raleway";
+}
+
+.paragraph__headline__tush {
+    color: #D4257D;
+    font-family: "permanent marker";
+}
+
+.paragraph__text__typer {
+    font-family: "poppins regular";
+}
