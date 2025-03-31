@@ -152,24 +152,27 @@ nav {
 
 .paragraph__text__typer {
     font-family: "Poppins";
+    margin-bottom: 25%;
 }
 
 .list__rewards {
     font-family: "Poppins";
 }
 
-#overskrift {
+#overskrifter__regular {
     font-size: 40px;
 }
 
 #text-venstre {
     font-size: 20px;
+    margin-left: 2%;
     display: flex;
     justify-content: start;
 }
 
 #text-hoejre {
     font-size: 20px;
+    margin-right: 2%;
     display: flex;
     justify-content: end;
     text-align: right;
