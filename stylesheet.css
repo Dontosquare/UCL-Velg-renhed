@@ -154,12 +154,22 @@ nav {
     font-family: "Poppins";
 }
 
+.list__rewards {
+    font-family: "Poppins";
+}
+
+#overskrift {
+    font-size: 40px;
+}
+
 #text-venstre {
+    font-size: 20px;
     display: flex;
     justify-content: start;
 }
 
 #text-hoejre {
+    font-size: 20px;
     display: flex;
     justify-content: end;
     text-align: right;
