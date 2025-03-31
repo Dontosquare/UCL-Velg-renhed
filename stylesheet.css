@@ -136,13 +136,45 @@ nav {
 }
 
 .textbox__grøn__top {
+    display: flex;
+    flex-direction: column;
     background-color: #81b428;
     color: white;
+}
+
+#greenbox__text_regular__start {
+    display: flex;
+    justify-content: start;
+    color: white;
+    font-family: "raleway";
+    margin-left: 2%;
+    font-size: 30px;
+}
+
+#greenbox__text_regular__end {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    color: white;
+    font-family: "raleway";
+    margin-right: 2%;
+    font-size: 30px;
+}
+
+#greenbox__text__tush {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "permanent marker";
+    font-size: 30px;
+
 }
 
 .paragraph__headline__regular {
     color: #D4257D;
     font-family: "raleway";
+    font-size: 20px;
 }
 
 .paragraph__headline__tush {
@@ -153,10 +185,12 @@ nav {
 .paragraph__text__typer {
     font-family: "Poppins";
     margin-bottom: 25%;
+    font-size: 20px;
 }
 
 .list__rewards {
     font-family: "Poppins";
+    font-size: 20px;
 }
 
 #overskrifter__regular {
