@@ -2,15 +2,28 @@
     box-sizing: border-box;
   }
   
-
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
   
   h1{
       font-family: "Raleway", sans-serif;
+      font-weight: bold;
       text-transform: uppercase;
       color: #D4257D;
-      font-size: 45px;
+      font-size: 4rem;
   }
   
+  h4{
+    font-family: 'Permanent Marker';
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2rem;   
+  }
+
   /* Center website */
   .main {
     max-width: 1000px;
@@ -18,7 +31,7 @@
   }
   
   .row {
-    margin: 10px -16px;
+    margin: 1rem -1rem;
     display: flex;
     flex-wrap: wrap;
   }
@@ -44,9 +57,9 @@
 
   /* Content */
   .content {
-    background-color: white;
     position: relative; /* This makes the h4 position relative to the content div */
     display: inline-block; /* This makes the div only as wide as its content (the image) */
+    filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15))
   }
   
   /* The "show" class is added to the filtered elements */
@@ -68,10 +81,10 @@
     outline: none;
     padding: 12px 16px;
     background-color: #81B428;
+    color: white;
     cursor: pointer;
     flex: 1;
     min-width: 100px;
-    
   }
   
   .btn:hover {
@@ -86,11 +99,13 @@
   .content h4 {
     position: absolute; /* This takes the h4 out of the normal document flow */
     bottom: 0; /* Positions the h4 at the bottom of the content div */
+    rotate: 8deg;
     left: 50%; /* Starts the h4 at the 50% mark of the content div */
-    transform: translateX(-50%); /* Shifts the h4 back by half its width to truly center it */
+    transform: translateX(-60%); /* Shifts the h4 back by half its width to truly center it */
     margin: 0; /* Removes default margins */
-    padding: 5px 10px; /* Optional: adds some padding for better appearance */
-    color: white; /* Optional: changes text color for better visibility */
+    padding: 5px 5px; /* Optional: adds some padding for better appearance */
+    color:#D4257D;
+    opacity: 85%;
     width: 100%; /* Optional: makes the h4 span the full width */
     text-align: center; /* Centers the text within the h4 */
     box-sizing: border-box; /* Ensures padding is included in the width */
@@ -115,7 +130,6 @@
       left: -8px;
       height: 100%;
       width: 4px;
-      background: #666;
       border-radius: 2px 0 0 2px;
     }
     
@@ -126,7 +140,36 @@
       right: -8px;
       height: 100%;
       width: 4px;
-      background: #666;
       border-radius: 0 2px 2px 0;
+    }
+
+    .row {
+        margin: 0.2rem -0.2rem;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      /* Add padding BETWEEN each column */
+      .row,
+      .row > .column {
+        padding: 0.05rem;
+      }
+
+    h1{
+        font-size: 2.5rem;   
+    }
+
+    h4{
+        font-size: 1.5rem;   
+    }
+
+    .btn-container {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .btn {
+        width: 100%;
+        flex: none;
     }
   }
