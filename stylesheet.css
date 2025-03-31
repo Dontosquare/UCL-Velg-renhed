@@ -11,7 +11,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 62px;
-    width: 100%;
+    width: 433px;
 }
 
 #logo {
@@ -138,4 +138,42 @@ nav {
 .textbox__grøn__top {
     background-color: #81b428;
     color: white;
+}
+
+.paragraph__headline__regular {
+    color: #D4257D;
+    font-family: "raleway";
+}
+
+.paragraph__headline__tush {
+    color: #D4257D;
+    font-family: "permanent marker";
+}
+
+.paragraph__text__typer {
+    font-family: "Poppins";
+    margin-bottom: 25%;
+}
+
+.list__rewards {
+    font-family: "Poppins";
+}
+
+#overskrifter__regular {
+    font-size: 40px;
+}
+
+#text-venstre {
+    font-size: 20px;
+    margin-left: 2%;
+    display: flex;
+    justify-content: start;
+}
+
+#text-hoejre {
+    font-size: 20px;
+    margin-right: 2%;
+    display: flex;
+    justify-content: end;
+    text-align: right;
 }
