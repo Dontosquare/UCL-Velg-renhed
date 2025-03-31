@@ -1,110 +1,132 @@
 * {
-  box-sizing: border-box;
-}
+    box-sizing: border-box;
+  }
+  
 
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
-
-h1{
-    font-family: "Raleway", sans-serif;
-}
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-.row {
-  margin: 10px -16px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create four equal columns by default */
-.column {
-  width: 25%;
-  display: none; /* Hide all elements by default */
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 16px;
-}
-
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #81B428;
-  cursor: pointer;
-  flex: 1;
-  min-width: 100px;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #D4257D;
-  color: white;
-}
-
-/* Responsive layout - makes a two column layout instead of four */
-@media (max-width: 480px) {
+  
+  h1{
+      font-family: "Raleway", sans-serif;
+      text-transform: uppercase;
+      color: #D4257D;
+      font-size: 45px;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .row {
+    margin: 10px -16px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns by default */
   .column {
-    width: 50%;
+    width: 25%;
+    display: none; /* Hide all elements by default */
   }
   
-  /* Bracket effect for mobile */
+  .content img {
+    width: 100%;       
+    height: auto;     
+    object-fit:cover; 
+    max-height: 100%; 
+  }
+
+  /* Content */
   .content {
-    position: relative;
-    margin: 4px;
+    background-color: white;
+    position: relative; /* This makes the h4 position relative to the content div */
+    display: inline-block; /* This makes the div only as wide as its content (the image) */
   }
   
-  .content:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -8px;
-    height: 100%;
-    width: 4px;
-    background: #666;
-    border-radius: 2px 0 0 2px;
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
   }
   
-  .content:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -8px;
-    height: 100%;
-    width: 4px;
-    background: #666;
-    border-radius: 0 2px 2px 0;
+  /* Style the buttons */
+  .btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 16px;
   }
-}
+  
+  .btn {
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #81B428;
+    cursor: pointer;
+    flex: 1;
+    min-width: 100px;
+    
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #D4257D;
+    color: white;
+  }
+
+  .content h4 {
+    position: absolute; /* This takes the h4 out of the normal document flow */
+    bottom: 0; /* Positions the h4 at the bottom of the content div */
+    left: 50%; /* Starts the h4 at the 50% mark of the content div */
+    transform: translateX(-50%); /* Shifts the h4 back by half its width to truly center it */
+    margin: 0; /* Removes default margins */
+    padding: 5px 10px; /* Optional: adds some padding for better appearance */
+    color: white; /* Optional: changes text color for better visibility */
+    width: 100%; /* Optional: makes the h4 span the full width */
+    text-align: center; /* Centers the text within the h4 */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+  }
+  
+  /* Responsive layout - makes a two column layout instead of four */
+  @media (max-width: 480px) {
+    .column {
+      width: 50%;
+    }
+    
+    /* Bracket effect for mobile */
+    .content {
+      position: relative;
+      margin: 4px;
+    }
+    
+    .content:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -8px;
+      height: 100%;
+      width: 4px;
+      background: #666;
+      border-radius: 2px 0 0 2px;
+    }
+    
+    .content:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -8px;
+      height: 100%;
+      width: 4px;
+      background: #666;
+      border-radius: 0 2px 2px 0;
+    }
+  }
