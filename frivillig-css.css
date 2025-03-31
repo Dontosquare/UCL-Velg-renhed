@@ -8,6 +8,10 @@ body {
   font-family: Arial;
 }
 
+h1{
+    font-family: "Raleway", sans-serif;
+}
+
 /* Center website */
 .main {
   max-width: 1000px;
@@ -55,7 +59,7 @@ body {
   border: none;
   outline: none;
   padding: 12px 16px;
-  background-color: white;
+  background-color: #81B428;
   cursor: pointer;
   flex: 1;
   min-width: 100px;
@@ -66,7 +70,7 @@ body {
 }
 
 .btn.active {
-  background-color: #666;
+  background-color: #D4257D;
   color: white;
 }
 
