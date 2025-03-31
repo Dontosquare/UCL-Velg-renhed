@@ -151,5 +151,16 @@ nav {
 }
 
 .paragraph__text__typer {
-    font-family: "poppins regular";
+    font-family: "Poppins";
+}
+
+#text-venstre {
+    display: flex;
+    justify-content: start;
+}
+
+#text-hoejre {
+    display: flex;
+    justify-content: end;
+    text-align: right;
 }
