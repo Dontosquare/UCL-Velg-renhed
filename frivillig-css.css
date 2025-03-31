@@ -4,7 +4,7 @@
   
   body {
     background-color: #f1f1f1;
-    padding: 50px;
+    padding: 0vw 8vw;
   }
   
   h1{
@@ -12,7 +12,7 @@
       font-weight: bold;
       text-transform: uppercase;
       color: #D4257D;
-      font-size: 5vw;
+      font-size: 4.5vw;
   }
   
   h4{
