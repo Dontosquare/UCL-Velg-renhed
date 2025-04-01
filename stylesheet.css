@@ -203,6 +203,7 @@ nav {
     font-size: 20px;
 }
 
+/*ungerådgiver*/
 #overskrifter__regular {
     font-size: 40px;
 }
@@ -225,8 +226,7 @@ nav {
   height: 250px;
 }
 
-
-
+/*chat rådgiver*/
 #text-venstre {
     font-size: 20px;
     margin-left: 2%;
@@ -234,12 +234,49 @@ nav {
     justify-content: start;
 }
 
+.polaroid__chatrådgiver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#chat-rådgiver_billede_1 {
+  transform: rotate(-9deg);
+  z-index: 2;
+  height: 250px;
+}
+
+#chat-rådgiver_billede_2 {
+  transform: rotate(9deg);
+  z-index: 1;
+  height: 250px;
+}
+
+/*formidlingsfrivillig*/
 #text-hoejre {
     font-size: 20px;
     margin-right: 2%;
     display: flex;
     justify-content: end;
     text-align: right;
+}
+
+.polaroid__formidlingsfrivllig {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#formidlingsfrivillig_billede_1 {
+  transform: rotate(12deg);
+  z-index: 1;
+  height: 250px;
+}
+
+#formidlingsfrivillig_billede_2 {
+  transform: rotate(-9deg);
+  z-index: 2;
+  height: 250px;
 }
 
 /* Sofie start */
