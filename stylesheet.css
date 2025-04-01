@@ -2,8 +2,6 @@ body {
     margin: 0;
     position: relative;
     background-image:url(billeder/baggrund.webp);
-    box-sizing: border-box;
-    overflow-x: hidden;
     
 }
 
@@ -143,8 +141,6 @@ nav {
     color: white;
 }
 
-/*her er greenbox delen*/
-
 #greenbox__text_regular__start {
     display: flex;
     justify-content: start;
@@ -174,13 +170,6 @@ nav {
 
 }
 
-.polaroid__carosuel {
-  display: flex;
-  justify-content: center;
-  height: 130px;
-}
-
-/*her er bliv frivillig delen*/
 .paragraph__headline__regular {
     color: #D4257D;
     font-family: "raleway";
@@ -198,7 +187,6 @@ nav {
     font-size: 20px;
 }
 
-/*listen over fordele*/
 .list__rewards {
     font-family: "Poppins";
     font-size: 20px;
@@ -332,13 +320,17 @@ h4{
   }
 
     @media (max-width: 480px) {
-        .column {
+      .voresfrivillig {
+        padding: 0vw 2px;
+      } 
+      
+      .column {
           width: 50%;
         }
         
         .content {
           position: relative;
-          margin: 4px;
+          margin: 0;
         }
         
         .content:before {
