@@ -2,7 +2,9 @@ body {
     margin: 0;
     position: relative;
     background-image:url(billeder/baggrund.webp);
-    overflow-x: hidden;
+    box-sizing: border-box;
+    
+    
 }
 
 .header {
@@ -141,6 +143,8 @@ nav {
     color: white;
 }
 
+/*her er greenbox delen*/
+
 #greenbox__text_regular__start {
     display: flex;
     justify-content: start;
@@ -167,15 +171,10 @@ nav {
     color: white;
     font-family: "permanent marker";
     font-size: 30px;
+
 }
 
-/* Polaroid */
-.polaroid {
-  display: flex;
-  justify-content: center;
-  height: 130px;
-}
-
+/*her er bliv frivillig delen*/
 .paragraph__headline__regular {
     color: #D4257D;
     font-family: "raleway";
@@ -193,6 +192,7 @@ nav {
     font-size: 20px;
 }
 
+/*listen over fordele*/
 .list__rewards {
     font-family: "Poppins";
     font-size: 20px;
@@ -236,7 +236,9 @@ h4{
 }
 
 .voresfrivillig {
+    box-sizing: border-box;
     margin: auto;
+    padding: 0vw 8vw;
   }
   
   .row {
@@ -360,7 +362,7 @@ h4{
         /* Add padding BETWEEN each column */
        .row,
          .row > .column {
-          padding: 0px;
+          padding: 3px;
        }
     
         h1{
@@ -377,10 +379,9 @@ h4{
         }
         
         .btn {
-            width: calc(8px - 8px); /* accounting for the gap */
+            width: calc(50% - 8px); /* accounting for the gap */
             min-width: 0;
             flex: none;
             font-size: 3.5vw;  
         }
       }
-      /* Sofie slut */
