@@ -218,12 +218,14 @@ nav {
   transform: rotate(-9deg);
   z-index: 2;
   height: 250px;
+  filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15))
 }
 
 #ungerådgiver_billede_2 {
   transform: rotate(9deg);
   z-index: 1;
   height: 250px;
+  filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15))
 }
 
 /*chat rådgiver*/
@@ -244,12 +246,14 @@ nav {
   transform: rotate(-9deg);
   z-index: 2;
   height: 250px;
+  filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15))
 }
 
 #chat-rådgiver_billede_2 {
   transform: rotate(9deg);
   z-index: 1;
   height: 250px;
+  filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15))
 }
 
 /*formidlingsfrivillig*/
@@ -271,12 +275,14 @@ nav {
   transform: rotate(12deg);
   z-index: 1;
   height: 250px;
+  filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15))
 }
 
 #formidlingsfrivillig_billede_2 {
   transform: rotate(-9deg);
   z-index: 2;
   height: 250px;
+  filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15))
 }
 
 /* Sofie start */
