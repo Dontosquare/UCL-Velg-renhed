@@ -3,6 +3,7 @@ body {
     position: relative;
     background-image:url(billeder/baggrund.webp);
     box-sizing: border-box;
+    overflow-x: hidden;
     
 }
 
@@ -168,7 +169,13 @@ nav {
     color: white;
     font-family: "permanent marker";
     font-size: 30px;
+}
 
+/* Polaroid */
+.polaroid {
+  display: flex;
+  justify-content: center;
+  height: 130px;
 }
 
 .paragraph__headline__regular {
