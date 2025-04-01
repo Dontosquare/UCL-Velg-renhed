@@ -2,9 +2,7 @@ body {
     margin: 0;
     position: relative;
     background-image:url(billeder/baggrund.webp);
-    box-sizing: border-box;
     overflow-x: hidden;
-    
 }
 
 .header {
@@ -238,9 +236,7 @@ h4{
 }
 
 .voresfrivillig {
-    box-sizing: border-box;
     margin: auto;
-    padding: 0vw 8vw;
   }
   
   .row {
@@ -364,7 +360,7 @@ h4{
         /* Add padding BETWEEN each column */
        .row,
          .row > .column {
-          padding: 3px;
+          padding: 0px;
        }
     
         h1{
@@ -381,9 +377,10 @@ h4{
         }
         
         .btn {
-            width: calc(50% - 8px); /* accounting for the gap */
+            width: calc(8px - 8px); /* accounting for the gap */
             min-width: 0;
             flex: none;
             font-size: 3.5vw;  
         }
       }
+      /* Sofie slut */
