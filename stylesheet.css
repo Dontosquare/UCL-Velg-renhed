@@ -215,13 +215,13 @@ nav {
 }
 
 #ungerådgiver_billede_1 {
-  transform: rotate(-10deg);
+  transform: rotate(-9deg);
   z-index: 2;
   height: 250px;
 }
 
 #ungerådgiver_billede_2 {
-  transform: rotate(10deg);
+  transform: rotate(9deg);
   z-index: 1;
   height: 250px;
 }
