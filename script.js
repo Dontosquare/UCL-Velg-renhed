@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         offScreenMenu.classList.toggle('active');
     });
 })
-
+/*lav et array der skyder nav baren ud i stor mode*/
 document.getElementById('hjem').onclick = function () {
     location.href = 'https://headspace.dk/'
 }
@@ -21,6 +21,8 @@ document.getElementById('headspaceFam').onclick = function () {
 document.getElementById('stoet').onclick = function () {
     location.href = 'https://headspace.dk/stoet/'
 }
+/*lav if else i signup letteren*/
+
 
 // Sofie start
 filterSelection("alle")

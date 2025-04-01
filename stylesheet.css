@@ -2,7 +2,6 @@ body {
     margin: 0;
     position: relative;
     background-image:url(billeder/baggrund.webp);
-    box-sizing: border-box;
     overflow-x: hidden;
     
 }
