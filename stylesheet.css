@@ -3,7 +3,7 @@ body {
     position: relative;
     background-image:url(billeder/baggrund.webp);
     box-sizing: border-box;
-    
+    overflow-x: hidden;
     
 }
 
@@ -174,7 +174,7 @@ nav {
 
 }
 
-.polaroid {
+.polaroid__carosuel {
   display: flex;
   justify-content: center;
   height: 130px;
