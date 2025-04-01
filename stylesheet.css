@@ -208,6 +208,24 @@ nav {
     font-size: 40px;
 }
 
+.polaroid__ungerådgiver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ungerådgiver_billede_1 {
+  transform: rotate(-10deg);
+  z-index: 2;
+  height: 250px;
+}
+
+#ungerådgiver_billede_2 {
+  transform: rotate(10deg);
+  z-index: 1;
+  height: 250px;
+}
+
 #text-venstre {
     font-size: 20px;
     margin-left: 2%;
