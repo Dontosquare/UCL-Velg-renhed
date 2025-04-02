@@ -65,7 +65,6 @@ font-size: 3vw;
   display: block;
 }
 
-
 .btn-container {
   display: flex;
   flex-wrap: wrap;
@@ -97,6 +96,16 @@ font-size: 3vw;
   color: white;
 }
 
+.content .font-vi h4{
+  color: #fff9f0;
+  font-size: 2vw;
+  left: 50%; 
+  transform: translateX(-50%); 
+  padding: 22% 20px; 
+  opacity: 95%;
+  line-height: 1.2;
+}
+
 .content h4 {
   position: absolute; 
   bottom: 0; 
@@ -110,7 +119,10 @@ font-size: 3vw;
   width: 100%; 
   text-align: center; 
   box-sizing: border-box; 
+  
 }
+
+
 
   @media (max-width: 480px) {
     
@@ -177,7 +189,13 @@ font-size: 3vw;
         flex: none;
         font-size: 3.5vw;  
     }
-  }
 
+    .content .font-vi h4{
+      font-size: 4.5vw;
+
+    }
     
-    
+    .content h4 {
+      font-size: 6.2vw;
+    }
+  }
