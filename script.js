@@ -8,6 +8,20 @@ document.addEventListener('DOMContentLoaded', () => {
         offScreenMenu.classList.toggle('active');
     });
 })
+
+let burgerMenu = {
+  menuItems: ['hjem', 'tnt', 'headspaceFam', 'stoet']
+}
+
+if (burgerMenu.menuItems.lenght > 0) {
+  for (i = 0; i < burgerMenu.menuItems.length; i++) {
+
+    const node = document.createElement('a');
+
+    const textnode = document.createTextNode(burgerMenu.menuItems[i]);
+  }
+}
+
 /*lav et array der skyder nav baren ud i stor mode*/
 document.getElementById('hjem').onclick = function () {
     location.href = 'https://headspace.dk/'
