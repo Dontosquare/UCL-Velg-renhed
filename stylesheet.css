@@ -286,10 +286,12 @@ nav {
 }
 
 .footer {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   background-color: #81b428;
   width: 100%;
   position: absolute;
+  
 
 }
 
@@ -297,12 +299,32 @@ nav {
   color: white;
   font-family: "Raleway";
   font-weight: 900;
+  margin-left: 2%;
 }
 
 .footer__text {
   color: #ffffff;
   font-family: "Raleway";
+  margin-left: 2%;
 }
+
+.footer__disclaimer{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Raleway';
+}
+
+.footer__rights{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Raleway';
+  font-weight: 900;
+}
+
 /* Sofie start 
 
 h1{
