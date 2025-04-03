@@ -285,6 +285,28 @@ nav {
   filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15))
 }
 
+.footer {
+  background-color: #81b428;
+  width: 100%;
+  position: absolute;
+
+}
+
+.footer__header {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  color: white;
+  font-family: "Raleway";
+  font-weight: 600;
+}
+
+.footer__text {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  color: #ffffff;
+}
 /* Sofie start */
 
 h1{

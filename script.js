@@ -22,7 +22,7 @@ if (burgerMenu.menuItems.lenght > 0) {
   }
 }
 
-/*lav et array der skyder nav baren ud i stor mode*/
+
 document.getElementById('hjem').onclick = function () {
     location.href = 'https://headspace.dk/'
 }
