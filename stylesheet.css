@@ -286,6 +286,7 @@ nav {
 }
 
 .footer {
+  display: grid;
   background-color: #81b428;
   width: 100%;
   position: absolute;
@@ -293,21 +294,16 @@ nav {
 }
 
 .footer__header {
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
   color: white;
   font-family: "Raleway";
-  font-weight: 600;
+  font-weight: 900;
 }
 
 .footer__text {
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
   color: #ffffff;
+  font-family: "Raleway";
 }
-/* Sofie start */
+/* Sofie start 
 
 h1{
     font-family: "Raleway", sans-serif;
@@ -337,16 +333,16 @@ h4{
     flex-wrap: wrap;
   }
   
-  /* luft imellem billeder  Kig på det her, her i dag --Sofie--- */ 
+  /* luft imellem billeder  Kig på det her, her i dag --Sofie--- 
   .row,
   .row > .column {
     padding: 0px;
   }
   
-  /* 4 per row */
+  /* 4 per row 
   .column {
     width: 25%;
-    display: none; /* gem alle elementer af default */
+    display: none; /* gem alle elementer af default 
   }
   
   .content img {
@@ -356,14 +352,14 @@ h4{
     max-height: 100%; 
   }
 
-  /* Content */
+  /* Content 
   .content {
-    position: relative; /* This makes the h4 position relative to the content div */
-    display: inline-block; /* This makes the div only as wide as its content (the image) */
+    position: relative; /* This makes the h4 position relative to the content div 
+    display: inline-block; /* This makes the div only as wide as its content (the image) 
     filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15))
   }
   
-  /* The "show" class is added to the filtered elements */
+  /* The "show" class is added to the filtered elements 
   .show {
     display: block;
   }
@@ -449,7 +445,7 @@ h4{
             flex-wrap: wrap;
           }
     
-        /* Add padding BETWEEN each column */
+        /* Add padding BETWEEN each column 
        .row,
          .row > .column {
           padding: 3px;
@@ -469,9 +465,9 @@ h4{
         }
         
         .btn {
-            width: calc(50% - 8px); /* accounting for the gap */
+            width: calc(50% - 8px); /* accounting for the gap 
             min-width: 0;
             flex: none;
             font-size: 3.5vw;  
         }
-      }
+      } */
