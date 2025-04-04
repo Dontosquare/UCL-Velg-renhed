@@ -8,14 +8,19 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 62px;
-    width: 433px;
+    justify-content: start;
+    align-items: start;
+    margin: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #ffffff;
 }
 
 #logo {
-    width: 80%;
+    width: 65%;
 }
 
 /* Burger menu */
@@ -93,7 +98,8 @@ nav {
 .ham-menu {
     height: 50px;
     width: 50px;
-    margin-left: auto;
+    margin: auto;
+    margin-left: 20%;
     position: relative;
 }
 
