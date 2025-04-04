@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en/dk">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,7 +57,6 @@
     </div>
   
   </div>
-    </div> 
 
   
     <div style="text-align:center">
@@ -71,12 +70,12 @@
     </div>
 
     <div class="textbox__grøn__top">
-        <p id="greenbox__text_regular__start">DET ER DET DU FÅR UD AF AT VÆRE FRIVILLIG</p>
-        <p id="greenbox__text__tush">GØR EN FORSKEL</p>
-        <p id="greenbox__text__tush">FÆLLESKAB</p>
-        <p id="greenbox__text__tush">TILFREDSHED</p>
-        <p id="greenbox__text__tush">TEAM AFTENER</p>
-        <p id="greenbox__text_regular__end">I HEADSPACE</p>
+        <p class="greenbox__text_regular__start">DET ER DET DU FÅR UD AF AT VÆRE FRIVILLIG</p>
+        <p class="greenbox__text__tush">GØR EN FORSKEL</p>
+        <p class="greenbox__text__tush">FÆLLESKAB</p>
+        <p class="greenbox__text__tush">TILFREDSHED</p>
+        <p class="greenbox__text__tush">TEAM AFTENER</p>
+        <p class="greenbox__text_regular__end">I HEADSPACE</p>
     </div>
     <!--polaroid billederne-->
     
@@ -113,15 +112,15 @@
     <!--Frivillige typer-->
     <div>
         <p class="paragraph__headline__regular" id="overskrifter__regular"><b>FRIVILLIG TYPER</b></p>
-        <p class="paragraph__headline__tush" id="text-venstre">UNGERÅDGIVER</p>
-        <p class="paragraph__text__typer" id="text-venstre">En ungerådgiver arbejder med at lytte til og støtte unge i alderen 12-25 år, som har brug for hjælp til personlige, sociale eller psykiske udfordringer. Rådgiveren tilbyder samtaler, vejledning og støtte, 
+        <p class="paragraph__headline__tush" class="text-venstre">UNGERÅDGIVER</p>
+        <p class="paragraph__text__typer" class="text-venstre">En ungerådgiver arbejder med at lytte til og støtte unge i alderen 12-25 år, som har brug for hjælp til personlige, sociale eller psykiske udfordringer. Rådgiveren tilbyder samtaler, vejledning og støtte, 
             både individuelt og i gruppe, og hjælper med at finde løsninger på de udfordringer, den unge står overfor.</p>
         <div class="polaroid__ungerådgiver">
           <img id="ungerådgiver_billede_2" src="billeder/ungerådgiver_2.webp" alt="guy on couch">
           <img id="ungerådgiver_billede_1" src="billeder/ungerådgiver_1.webp" alt="chair">
         </div>
-        <p class="paragraph__headline__tush" id="text-hoejre">CHAT-RÅDGIVER</p>
-        <p class="paragraph__text__typer" id="text-hoejre">Som chat-rådgiver er du med til at tilbyde anonym rådgivning via chat til unge, der har brug for hjælp. Du lytter, giver råd og støtter unge i at håndtere deres bekymringer, hvad enten det handler om relationer, stress, angst eller andre personlige udfordringer. 
+        <p class="paragraph__headline__tush" class="text-hoejre">CHAT-RÅDGIVER</p>
+        <p class="paragraph__text__typer" class="text-hoejre">Som chat-rådgiver er du med til at tilbyde anonym rådgivning via chat til unge, der har brug for hjælp. Du lytter, giver råd og støtter unge i at håndtere deres bekymringer, hvad enten det handler om relationer, stress, angst eller andre personlige udfordringer. 
             Du arbejder på at skabe et trygt rum for unge at dele deres tanker i</p>
         
         <div class="polaroid__chatrådgiver">
@@ -129,15 +128,15 @@
           <img id="chat-rådgiver_billede_2" src="billeder/chat-rådgiver_2.webp" alt="pc">
           </div>
         <div>
-        <p class="paragraph__headline__tush" id="text-venstre">FORMIDLINGSFRIVILLIG</p>
-        <p class="paragraph__text__typer" id="text-venstre">En formidlingsfrivillig er med til at sprede kendskabet til Headspace Danmark og de tilbud, vi har til unge. Det kan inkludere at være med til events, oplysningsarbejde og kommunikere gennem sociale medier. 
+        <p class="paragraph__headline__tush" class="text-venstre">FORMIDLINGSFRIVILLIG</p>
+        <p class="paragraph__text__typer" class="text-venstre">En formidlingsfrivillig er med til at sprede kendskabet til Headspace Danmark og de tilbud, vi har til unge. Det kan inkludere at være med til events, oplysningsarbejde og kommunikere gennem sociale medier. 
             Formidlingsfrivillige hjælper med at skabe opmærksomhed om, hvordan unge kan få støtte, og hvilke ressourcer Headspace tilbyder.</p>
          </div>
         
         <div class="polaroid__formidlingsfrivllig">
           <img id="formidlingsfrivillig_billede_1" src="billeder/formidlingsfrivillig_1.webp" alt="photoshoot">
           <img id="formidlingsfrivillig_billede_2" src="billeder/formidlingsfrivillig_2.webp" alt="lady taking selfie">
-          
+        </div>
     </div>
 
     <!--Her skal tilmeldelsesformlen være -->
@@ -154,6 +153,7 @@
         <button class="btn" onclick="filterSelection('chat')">Chat-rådgiver</button>
         <button class="btn" onclick="filterSelection('formidling')">Formidlingsfrivillig</button>
       </div>
+    </div>
       
       <!-- Frivillig Gallery Grid -->
       <div class="row">
@@ -261,7 +261,7 @@
               </a>
             </div>
       </div>
-
+</main>
     <!--Vores kæmpe skønne footer-->
     <footer class="footer">
       <div>
@@ -316,7 +316,5 @@
       </div>
 
     </footer>
-    
-  </main>
 </body>
 </html>

@@ -187,7 +187,7 @@ nav {
 
 /*her er greenbox delen*/
 
-#greenbox__text_regular__start {
+.greenbox__text_regular__start {
     display: flex;
     justify-content: start;
     color: white;
@@ -196,7 +196,7 @@ nav {
     font-size: 30px;
 }
 
-#greenbox__text_regular__end {
+.greenbox__text_regular__end {
     display: flex;
     justify-content: end;
     align-items: end;
@@ -206,7 +206,7 @@ nav {
     font-size: 30px;
 }
 
-#greenbox__text__tush {
+.greenbox__text__tush {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,7 +273,7 @@ nav {
 }
 
 /*chat rådgiver*/
-#text-venstre {
+.text-venstre {
     font-size: 20px;
     margin-left: 2%;
     display: flex;
@@ -302,7 +302,7 @@ nav {
 }
 
 /*formidlingsfrivillig*/
-#text-hoejre {
+.text-hoejre {
     font-size: 20px;
     margin-right: 2%;
     display: flex;
