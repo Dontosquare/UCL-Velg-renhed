@@ -83,11 +83,14 @@ for (var i = 0; i < btns.length; i++) {
 // Sofie slut */
 
 // Mads section
-
 // her laver vi et array som hedder ungerådgiver og putter vores billeder ind
 let ungerådgiver = ['ungerådgiver_billede_2', 'ungerådgiver_billede_1'];
+let chatRådgiver = ['chat-rådgiver_billede_1', 'chat-rådgiver_billede_2'];
+let formidlingsfrivllig = ['formidlingsfrivillig_billede_1', 'formidlingsfrivillig_billede_2']
 
 document.addEventListener("click", (Event) => {skift(Event, ungerådgiver)}) // her laver jeg en eventlistener som kalder på vores onClick function med navn skift
+document.addEventListener("click", (Event) => {skift(Event, chatRådgiver)})
+document.addEventListener("click", (Event) => {skift(Event, formidlingsfrivllig)})
 
 // delay function kører også venter den X antal tid
 function delay(ms,) {
@@ -103,7 +106,7 @@ async function displayOneAtATime(time, array) {
         }
         
         for (let i = 0; i < array.length; i++) { // præcis det samme som før standard for loop
-            await delay (time) // her kalder jeg på delayed for at give 2 sekund før den gør billederne synlig
+            await delay (time) // her kalder jeg på delayed for at give 1 sekund før den gør billederne synlig
             document.getElementById(array[i]).style.opacity = "1"; // her sætter jeg alle billeder i arrayes opacity til 1
         }
     }
@@ -111,7 +114,9 @@ async function displayOneAtATime(time, array) {
     console.log("Ingen billeder!") // passer til vores if statement fra tidligere
     }
 }
-displayOneAtATime(2000, ungerådgiver); // her giver jeg funktionen displayOneAtATime et augument på 2000 ms i det tilfælde
+displayOneAtATime(1000, ungerådgiver); // her giver jeg funktionen displayOneAtATime et augument på 1000 ms i det tilfælde
+displayOneAtATime(1000, chatRådgiver);
+displayOneAtATime(1000, formidlingsfrivllig);
 
 function skift(event, array) { // her laver vi en function som vi kalder skift som indebære et parameter
     let billede_1 = document.getElementById(array[0]) // her laver jeg en variabel som hedder billede_1 hvor vi kalder vores første billede i arrayed
@@ -125,3 +130,5 @@ function skift(event, array) { // her laver vi en function som vi kalder skift s
         billede_2.style.zIndex = 2
     }
 }
+
+// Chris
