@@ -308,6 +308,11 @@ nav {
   margin-left: 2%;
 }
 
+.footer__icons{
+  color: #ffffff;
+  
+}
+
 .footer__disclaimer{
   display: flex;
   justify-content: center;
