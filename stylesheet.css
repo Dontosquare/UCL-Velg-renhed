@@ -534,7 +534,7 @@ font-size: 3vw;
 
 
 
-  @media (max-width: 1480px) {
+  @media (max-width: 480px) {
     .column {
       width: 50%;
     }
