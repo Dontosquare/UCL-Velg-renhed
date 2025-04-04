@@ -132,3 +132,24 @@ function skift(event, array) { // her laver vi en function som vi kalder skift s
 }
 
 // Chris
+let slideIndex = 0; /*Opretter en variabel slideIndex, som holder styr på, hvilket slide der vises.*/
+showSlides();
+
+function showSlides() { /*Definerer funktionen showSlides(), som styrer billedskift i slideshowet.*/
+  let i;
+  let slides = document.getElementsByClassName("mySlides"); /*Henter alle elementer med klassen "mySlides" (billederne i slideshowet).*/
+  let dots = document.getElementsByClassName("dot"); /*Henter alle elementer med klassen "dot" (indikatorprikkerne for slideshowet).*/
+  for (i = 0; i < slides.length; i++) { /*Skjuler alle slides ved at sætte deres display til "none".*/
+    slides[i].style.display = "none";
+  }
+  
+  slideIndex++; /*Øger slideIndex med 1 for at vise det næste slide.*/
+  if (slideIndex > slides.length) {slideIndex = 1} /*Hvis slideIndex bliver større end antallet af slides, nulstilles det til 1, så slideshowet starter forfra.*/
+  for (i = 0; i < dots.length; i++) { /*Fjerner "active"-klassen fra alle indikatorprikker, så de ikke er markeret som aktive.*/
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  
+  slides[slideIndex-1].style.display = "block"; /*Viser det aktuelle slide ved at sætte display til "block".*/
+  dots[slideIndex-1].className += " active"; /*Tilføjer "active"-klassen til den tilhørende indikatorprik for at vise, hvilket slide der er aktivt.*/
+  setTimeout(showSlides, 5000); /* Kalder showSlides() igen efter 5 sekunder for at skifte til næste slide automatisk.*/
+}
