@@ -418,10 +418,6 @@ nav {
     box-sizing: border-box;
   }
   
-  body {
-    background-color: #f1f1f1;
-  }
-  
 h1{
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -539,12 +535,7 @@ font-size: 3vw;
 
 
 
-  @media (max-width: 480px) {
-    
-    body {
-      background-color: #f1f1f1;
-    }
-
+  @media (max-width: 1480px) {
     .column {
       width: 50%;
     }
