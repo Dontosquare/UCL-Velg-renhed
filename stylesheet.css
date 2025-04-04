@@ -336,15 +336,6 @@ nav {
   animation: slideInRight 2s forwards;
 }
 
-/*
-.middle-left {
-  
-}
-
-.middle-right {
-  
-}
-*/
 @keyframes slideInLeft {
   0% {
       transform: translateX(-100%);
