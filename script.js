@@ -107,6 +107,6 @@ function showSlides() { /*Definerer funktionen showSlides(), som styrer billedsk
   }
   
   slides[slideIndex-1].style.display = "block"; /*Viser det aktuelle slide ved at sætte display til "block".*/
-  dots[slideIndex-1].className += "slide_active"; /*Tilføjer "active"-klassen til den tilhørende indikatorprik for at vise, hvilket slide der er aktivt.*/
+  dots[slideIndex-1].className += " active"; /*Tilføjer "active"-klassen til den tilhørende indikatorprik for at vise, hvilket slide der er aktivt.*/
   setTimeout(showSlides, 5000); /* Kalder showSlides() igen efter 5 sekunder for at skifte til næste slide automatisk.*/
 }
