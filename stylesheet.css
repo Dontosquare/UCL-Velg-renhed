@@ -353,7 +353,7 @@ nav {
   font-weight: 900;
 }
 
-/* Sofie start 
+/* Sofie start
 
 h1{
     font-family: "Raleway", sans-serif;
@@ -389,7 +389,7 @@ h4{
     padding: 0px;
   }
   
-  /* 4 per row 
+  /* 4 per row
   .column {
     width: 25%;
     display: none; /* gem alle elementer af default 
@@ -398,7 +398,6 @@ h4{
   .content img {
     width: 100%;       
     height: auto;     
-    object-fit:cover; 
     max-height: 100%; 
   }
 
@@ -406,7 +405,7 @@ h4{
   .content {
     position: relative; /* This makes the h4 position relative to the content div 
     display: inline-block; /* This makes the div only as wide as its content (the image) 
-    filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15))
+    filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15));
   }
   
   /* The "show" class is added to the filtered elements 
@@ -452,7 +451,6 @@ h4{
     rotate: 8deg;
     left: 50%; 
     transform: translateX(-60%); 
-    margin: 0; 
     padding: 5px 5px; 
     color:#D4257D;
     opacity: 85%;
@@ -498,7 +496,7 @@ h4{
         /* Add padding BETWEEN each column 
        .row,
          .row > .column {
-          padding: 3px;
+          padding: 0px;
        }
     
         h1{
