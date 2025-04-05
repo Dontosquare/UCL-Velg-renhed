@@ -328,38 +328,7 @@ nav {
   filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15))
 }
 
-.venstre {
-  animation: slideInLeft 2s forwards;
-}
-
-.højre {
-  animation: slideInRight 2s forwards;
-}
-
-@keyframes slideInLeft {
-  0% {
-      transform: translateX(-100%);
-      opacity: 0;
-  }
-  100% {
-      transform: translateX(0);
-      transform: rotate(12deg);
-      opacity: 1;
-  }
-}
-
-@keyframes slideInRight {
-  0% {
-      transform: translateX(100%);
-      opacity: 0;
-  }
-  100% {
-      transform: translateX(0);
-      transform: rotate(-9deg);
-      opacity: 1;
-  }
-}
-
+/* Footer */
 .footer {
   display: flex;
   flex-direction: column;
