@@ -271,13 +271,7 @@ nav {
   filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15))
 }
 
-/*chat rådgiver*/
-.text-venstre {
-    font-size: 20px;
-    margin-left: 2%;
-    display: flex;
-    justify-content: start;
-}
+
 
 .polaroid__chatrådgiver {
   display: flex;
@@ -297,15 +291,6 @@ nav {
   z-index: 1;
   height: 250px;
   filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15))
-}
-
-/*formidlingsfrivillig*/
-.text-hoejre {
-    font-size: 20px;
-    margin-right: 2%;
-    display: flex;
-    justify-content: end;
-    text-align: right;
 }
 
 .polaroid__formidlingsfrivllig {
