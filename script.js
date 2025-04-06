@@ -92,6 +92,38 @@ document.addEventListener("click", (Event) => {skift(Event, ungerådgiver)}) // 
 document.addEventListener("click", (Event) => {skift(Event, chatRådgiver)})
 document.addEventListener("click", (Event) => {skift(Event, formidlingsfrivllig)})
 
+const slideInLeft = [
+  {
+    transform: "translateX(-100%)",
+    opacity: 0,
+  },
+  {
+    transform: "translateX(0)",
+    transform: "rotate(12deg)",
+    opacity: 1,
+  }
+]
+const slideInLeftTiming = {
+  duration: 2000,
+  iterations: 1,
+}
+
+const slideInRight= [
+  {
+    transform: "translateX(100%)",
+    opacity: 0,
+  },
+  {
+    transform: "translateX(0)",
+    transform: "rotate(-9deg)",
+    opacity: 1,
+  }
+]
+const slideInRightTiming = {
+  duration: 2000,
+  iterations: 1,
+}
+
 // delay function kører også venter den X antal tid
 function delay(ms,) {
     return new Promise(resolve => setTimeout(resolve,ms)); // laver et nyt "promise" objekt som laver en resolve funktion som bliver kaldt med det simme i "setTimeout" funktionen som venter x anatal tid
@@ -108,6 +140,14 @@ async function displayOneAtATime(time, array) {
         for (let i = 0; i < array.length; i++) { // præcis det samme som før standard for loop
             await delay (time) // her kalder jeg på delayed for at give 1 sekund før den gør billederne synlig
             document.getElementById(array[i]).style.opacity = "1"; // her sætter jeg alle billeder i arrayes opacity til 1
+
+            let selectedPicture = document.getElementById(array[i]) // vi laver en variable som hedder selectedPicture og siger den skal være det samme som vores array
+            if (selectedPicture.className == "venstre") { // vi laver et if state som tager alle billeder med classen venstre
+              selectedPicture.animate (slideInLeft, slideInLeftTiming); // og siger den skal udføre den her animation som vi lavede tidligere
+            }
+            else {
+              selectedPicture.animate (slideInRight, slideInRightTiming); // her er et else statement som siger alle billeder som ikke har classen venstre skal gøre den her animation
+            }
         }
     }
     else {

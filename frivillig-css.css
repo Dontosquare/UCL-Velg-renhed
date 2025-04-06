@@ -1,81 +1,109 @@
+/* Nulstil box-model for alle elementer */
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #f1f1f1;
-    padding: 0vw 8vw;
-  }
-  
-h1{
+  box-sizing: border-box;
+}
+
+/* Grundlæggende sideopsætning */
+body {
+  background-color: #f1f1f1;
+  padding: 0vw 2vw; /* Mindre padding på mobil */
+}
+
+h1 {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: #D4257D;
-  font-size: 4.5vw;
+  font-size: 8.2vw; /* Større skrift på mobil */
 }
 
-h4{
-font-family: 'Permanent Marker';
-font-weight: bold;
-text-transform: uppercase;
-color: white;
-font-size: 3vw;   
+h4 {
+  font-family: 'Permanent Marker';
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  font-size: 5vw; /* Større skrift på mobil */
 }
 
+/* Container til frivillig-billeder */
 .voresfrivillig {
   box-sizing: border-box;
   margin: auto;
 }
 
+/* Række med flexbox til billedgrid */
 .row {
-  margin: 0;
+  margin: 0.2rem -0.2rem;
   display: flex;
   flex-wrap: wrap;
 }
 
-/* luft imellem billeder  Kig på det her, her i dag --Sofie--- */ 
+/* Afstand mellem kolonner */
 .row,
 .row > .column {
-  padding: 8px;
+  padding: 3px;
 }
 
-/* 4 per row */
+/* Standard: 2 billeder per række på mobil */
 .column {
-  width: 25%;
-  display: none; /* gem alle elementer af default */
+  width: 50%;
+  display: none; /* Skjul alle som standard */
 }
 
+/* Billedstyling - fylder hele containeren */
 .content img {
   width: 100%;       
   height: auto;     
-  object-fit:cover; 
+  object-fit: cover; 
   max-height: 100%; 
 }
 
-/* Content */
+/* Container til hvert billede + tekst */
 .content {
-  position: relative; /* This makes the h4 position relative to the content div */
-  display: inline-block; /* This makes the div only as wide as its content (the image) */
-  filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15))
+  position: relative;
+  display: inline-block;
+  filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15));
+  margin: 0;
 }
 
-/* The "show" class is added to the filtered elements */
+/* Dekorative linjer (kun på mobil) */
+.content:before {
+  position: absolute;
+  top: 0;
+  left: -8px;
+  height: 100%;
+  width: 4px;
+  border-radius: 2px 0 0 2px;
+}
+
+.content:after {
+  position: absolute;
+  top: 0;
+  right: -8px;
+  height: 100%;
+  width: 4px;
+  border-radius: 0 2px 2px 0;
+}
+
+/* Vis filtrerede elementer */
 .show {
   display: block;
 }
 
+/* Knap-container til filtrering */
 .btn-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 8px;
   margin-bottom: 16px;
+  flex-direction: row;
 }
 
+/* Knapper til kategori-filtrering */
 .btn {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
-  font-size: 1.5vw;  
+  font-size: 3.5vw; /* Større tekst på mobil */
   border: none;
   border-radius: 10px;
   outline: none;
@@ -83,22 +111,25 @@ font-size: 3vw;
   background-color: #81B428;
   color: white;
   cursor: pointer;
-  flex: 1;
-  min-width: 100px;
+  width: calc(50% - 8px); /* 2 knapper per række på mobil */
+  min-width: 0;
 }
 
+/* Hover-effekt til knapper */
 .btn:hover {
-  background-color:#4b6e0d;
+  background-color: #4b6e0d;
 }
 
+/* Aktiv knap (valgt filter) */
 .btn.active {
   background-color: #D4257D;
   color: white;
 }
 
-.content .font-vi h4{
+/* Special-styling til "VI"-tekst på billeder */
+.content .font-vi h4 {
   color: #fff9f0;
-  font-size: 2vw;
+  font-size: 4.5vw;
   left: 50%; 
   transform: translateX(-50%); 
   padding: 22% 20px; 
@@ -106,6 +137,7 @@ font-size: 3vw;
   line-height: 1.2;
 }
 
+/* Standard tekst på billeder */
 .content h4 {
   position: absolute; 
   bottom: 0; 
@@ -114,88 +146,63 @@ font-size: 3vw;
   transform: translateX(-60%); 
   margin: 0; 
   padding: 5px 5px; 
-  color:#D4257D;
+  color: #D4257D;
   opacity: 85%;
   width: 100%; 
   text-align: center; 
   box-sizing: border-box; 
-  
+  font-size: 6.2vw;
 }
 
-
-
-  @media (max-width: 480px) {
-    
-    body {
-      background-color: #f1f1f1;
-      padding: 0vw 2vw;
-    }
-
-    .column {
-      width: 50%;
-    }
-    
-    .content {
-      position: relative;
-      margin: 0;
-    }
-    
-    .content:before {
-      position: absolute;
-      top: 0;
-      left: -8px;
-      height: 100%;
-      width: 4px;
-      border-radius: 2px 0 0 2px;
-    }
-    
-    .content:after {
-      position: absolute;
-      top: 0;
-      right: -8px;
-      height: 100%;
-      width: 4px;
-      border-radius: 0 2px 2px 0;
-    }
-
-    .row {
-        margin: 0.2rem -0.2rem;
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-    /* Add padding BETWEEN each column */
-   .row,
-     .row > .column {
-      padding: 3px;
-   }
-
-    h1{
-      font-size: 8.2vw;   
-    }
-
-    h4{
-      font-size: 5vw;   
-    }
-
-    .btn-container {
-        flex-direction: wrap;
-        gap: 8px;
-    }
-    
-    .btn {
-        width: calc(50% - 8px); /* accounting for the gap */
-        min-width: 0;
-        flex: none;
-        font-size: 3.5vw;  
-    }
-
-    .content .font-vi h4{
-      font-size: 4.5vw;
-
-    }
-    
-    .content h4 {
-      font-size: 6.2vw;
-    }
+/* Tablet og større skærme */
+@media (min-width: 481px) {
+  body {
+    padding: 0vw 8vw; /* Mere padding på desktop */
   }
+
+  h1 {
+    font-size: 4.5vw; /* Mindre skrift på større skærme */
+  }
+
+  h4 {
+    font-size: 3vw;
+  }
+
+  /* Mere luft mellem billeder */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+
+  /* 4 billeder per række på desktop */
+  .column {
+    width: 25%;
+  }
+
+  /* Fjern dekorative linjer på desktop */
+  .content:before,
+  .content:after {
+    display: none;
+  }
+
+  /* Knapper med mere luft */
+  .btn-container {
+    gap: 16px;
+  }
+
+  .btn {
+    flex: 1;
+    min-width: 100px;
+    font-size: 1.5vw; /* Mindre tekst på desktop */
+    width: auto;
+  }
+
+  /* Mindre tekst på billeder */
+  .content .font-vi h4 {
+    font-size: 2vw;
+  }
+
+  .content h4 {
+    font-size: inherit;
+  }
+}

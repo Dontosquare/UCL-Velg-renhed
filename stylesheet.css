@@ -255,7 +255,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: slideIn 2s forwards;
 }
 
 #ungerådgiver_billede_1 {
@@ -284,7 +283,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: slideIn 2s forwards;
 }
 
 #chat-rådgiver_billede_1 {
@@ -314,7 +312,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: slideIn 2s forwards;
 }
 
 #formidlingsfrivillig_billede_1 {
@@ -331,19 +328,7 @@ nav {
   filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15))
 }
 
-
-@keyframes slideIn {
-  0% {
-      transform: translateX(-100%);
-      opacity: 0;
-  }
-  100% {
-      transform: translateX(0);
-      opacity: 1;
-  }
-}
-
-
+/* Footer */
 .footer {
   display: flex;
   flex-direction: column;
