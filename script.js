@@ -142,7 +142,7 @@ async function displayOneAtATime(time, array) {
             document.getElementById(array[i]).style.opacity = "1"; // her sætter jeg alle billeder i arrayes opacity til 1
 
             let selectedPicture = document.getElementById(array[i]) // vi laver en variable som hedder selectedPicture og siger den skal være det samme som vores array
-            if (selectedPicture.className == "venstre") { // vi laver et if state som tager alle billeder med classen venstre
+            if (selectedPicture.className == "venstre__billede") { // vi laver et if state som tager alle billeder med classen venstre
               selectedPicture.animate (slideInLeft, slideInLeftTiming); // og siger den skal udføre den her animation som vi lavede tidligere
             }
             else {
