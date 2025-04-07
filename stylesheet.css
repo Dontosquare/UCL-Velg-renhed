@@ -528,9 +528,10 @@ h4 {
   box-sizing: border-box; 
   font-size: 6.2vw;
 }
+/* Sofie slut */
 
-/* Tablet og større skærme */
 @media (min-width: 481px) {
+  /* Sofie start */
   h1 {
     font-size: 4.5vw; /* Mindre skrift på større skærme */
   }
@@ -576,4 +577,6 @@ h4 {
   .content h4 {
     font-size: inherit;
   }
+  /* Sofie slut */
 }
+
