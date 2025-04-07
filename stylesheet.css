@@ -383,11 +383,6 @@ nav {
 }
 
 /* Sofie start */
-/* Grundlæggende sideopsætning */
-body {
-  background-color: #f1f1f1;
-  padding: 0vw 2vw; /* Mindre padding på mobil */
-}
 
 h1 {
   font-family: "Raleway", sans-serif;
