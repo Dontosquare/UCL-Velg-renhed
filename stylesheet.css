@@ -618,8 +618,7 @@ h4 {
   .footer__header{
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    padding: 2%;
+    flex-direction: row;  
   }
 
   .footer__text{
@@ -627,7 +626,6 @@ h4 {
     justify-content: space-evenly;
     flex-direction: row;
     margin-right: 20%;
-    margin-left: 20%;
     padding: 2%;
   }
 
@@ -641,6 +639,17 @@ h4 {
     flex-direction: column;
     margin: 2%;
     padding-top: 20%
+  }
+
+  .footer__certifikat{
+    display: flex;
+    margin-top: auto;
+    padding-top: 20%;
+  }
+
+  .footer__rights{
+    display: flex;
+    padding-top: 50%;
   }
 }
 
