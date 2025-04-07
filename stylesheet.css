@@ -156,7 +156,7 @@ nav {
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin-top: 10%;
 }
 
 
@@ -219,7 +219,7 @@ nav {
 .polaroid__carosuel {
   display: flex;
   justify-content: center;
-  height: 130px;
+  height: 160px;
 }
 
 /*her er bliv frivillig delen*/
