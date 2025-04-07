@@ -531,10 +531,6 @@ h4 {
 
 /* Tablet og større skærme */
 @media (min-width: 481px) {
-  body {
-    padding: 0vw 8vw; /* Mere padding på desktop */
-  }
-
   h1 {
     font-size: 4.5vw; /* Mindre skrift på større skærme */
   }
