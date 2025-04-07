@@ -161,6 +161,7 @@ nav {
   max-width: 1000px;
   position: relative;
   margin-top: 10%;
+  margin: auto;
 }
 
 
@@ -536,6 +537,7 @@ h4 {
 @media (min-width: 481px) {
   .header {
     height: 10%;
+    position: relative;
   }
 
   .header__links {
@@ -557,6 +559,19 @@ h4 {
   .ham-menu {
     opacity: 0;
   }
+
+  .polaroid__carosuel {
+    height: 250px;
+  }
+
+  .overall__typer {
+    margin-left: 1%;
+  }
+
+  .somFrivillig {
+    margin-left: 1%;
+  }
+
 }
 
 /* Sofie slut */
