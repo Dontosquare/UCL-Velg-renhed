@@ -19,6 +19,10 @@ body {
     background-color: #ffffff;
 }
 
+.header__links {
+  display: none;
+}
+
 #logo {
     width: 65%;
 }
@@ -534,6 +538,13 @@ h4 {
     height: 10%;
   }
 
+  .header__links {
+    opacity: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
   #logo {
     width: 20%;
   }
@@ -552,35 +563,35 @@ h4 {
   }
 }
 
-/* Sofie slut */
+/* Sofie slut 
 @media (min-width: 481px) {
-  /* Sofie start */
+  /* Sofie start 
   h1 {
-    font-size: 4.5vw; /* Mindre skrift på større skærme */
+    font-size: 4.5vw; /* Mindre skrift på større skærme 
   }
 
   h4 {
     font-size: 3vw;
   }
 
-  /* Mere luft mellem billeder */
+  /* Mere luft mellem billeder 
   .row,
   .row > .column {
     padding: 8px;
   }
 
-  /* 4 billeder per række på desktop */
+  /* 4 billeder per række på desktop 
   .column {
     width: 25%;
   }
 
-  /* Fjern dekorative linjer på desktop */
+  /* Fjern dekorative linjer på desktop 
   .content:before,
   .content:after {
     display: none;
   }
 
-  /* Knapper med mere luft */
+  /* Knapper med mere luft 
   .btn-container {
     gap: 16px;
   }
@@ -588,11 +599,11 @@ h4 {
   .btn {
     flex: 1;
     min-width: 100px;
-    font-size: 1.5vw; /* Mindre tekst på desktop */
+    font-size: 1.5vw; /* Mindre tekst på desktop 
     width: auto;
   }
 
-  /* Mindre tekst på billeder */
+  /* Mindre tekst på billeder 
   .content .font-vi h4 {
     font-size: 2vw;
   }
@@ -600,6 +611,6 @@ h4 {
   .content h4 {
     font-size: inherit;
   }
-  /* Sofie slut */
-}
 
+}
+  /* Sofie slut 
