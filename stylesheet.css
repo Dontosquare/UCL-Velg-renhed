@@ -529,6 +529,29 @@ h4 {
   font-size: 6.2vw;
 }
 
+@media (min-width: 481px) {
+  .header {
+    height: 10%;
+  }
+
+  #logo {
+    width: 20%;
+  }
+
+  .ham-menu {
+    opacity: 0;
+  }
+
+  .header__links {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "raleway";
+    list-style-type: none;
+    color: #81B428
+
+  }
+}
+
 /* Sofie slut */
 @media (min-width: 481px) {
   /* Sofie start */
