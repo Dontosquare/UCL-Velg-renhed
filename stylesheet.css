@@ -41,6 +41,7 @@ body {
     align-items: center;
     text-align: center;
     font-size: 3rem;
+    z-index: 5;
     transition: .3s ease;
     font-family: "Raleway";  
     
@@ -89,7 +90,7 @@ body {
 
 .off-screen-menu.active {
     right: 0px;
-    z-index: 4;
+    z-index: 5;
 }
 
 nav {
@@ -104,6 +105,7 @@ nav {
     margin: auto;
     margin-left: 20%;
     position: relative;
+    z-index: 5;
 }
 
 .ham-menu span {
@@ -557,7 +559,7 @@ h4 {
   }
 
   .ham-menu {
-    opacity: 0;
+    display: none;
   }
 
   .polaroid__carosuel {
@@ -566,12 +568,66 @@ h4 {
 
   .overall__typer {
     margin-left: 1%;
+    font-size: 50px;
   }
 
   .somFrivillig {
     margin-left: 1%;
   }
 
+  #ungerådgiver_billede_1{
+    height: 400px;
+    margin-bottom: 2%;
+  }
+
+  #ungerådgiver_billede_2{
+    height: 400px;
+    margin-bottom: 2%;
+  }
+
+  #chat-rådgiver_billede_1{
+    height: 400px;
+    margin-bottom: 2%;
+  }
+
+  #chat-rådgiver_billede_2{
+    height: 400px;
+    margin-bottom: 2%;
+  }
+
+  #formidlingsfrivillig_billede_1{
+    height: 400px;
+    margin-bottom: 2%;
+  }
+
+  #formidlingsfrivillig_billede_2{
+    height: 400px;
+    margin-bottom: 2%;
+  }
+
+  .paragraph__text__typer{
+    margin-bottom: 2%;
+  }
+
+  .footer__header{
+    color: blue;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+  }
+
+  .footer__text{
+    color: blue;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+  }
+
+  .footer__icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /* Sofie slut */
