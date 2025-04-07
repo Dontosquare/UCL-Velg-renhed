@@ -540,9 +540,14 @@ h4 {
 
   .header__links {
     opacity: 100%;
-    display: flex;
-    justify-content: center;
     flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "raleway";
+    list-style-type: none;
+    color: #81B428;
+    font-weight: 900;
+    margin-top: 4%;
   }
 
   #logo {
@@ -552,46 +557,37 @@ h4 {
   .ham-menu {
     opacity: 0;
   }
-
-  .header__links {
-    display: flex;
-    justify-content: space-evenly;
-    font-family: "raleway";
-    list-style-type: none;
-    color: #81B428
-
-  }
 }
 
-/* Sofie slut 
+/* Sofie slut */
 @media (min-width: 481px) {
-  /* Sofie start 
+  /* Sofie start */
   h1 {
-    font-size: 4.5vw; /* Mindre skrift på større skærme 
+    font-size: 4.5vw; /* Mindre skrift på større skærme */
   }
 
   h4 {
     font-size: 3vw;
   }
 
-  /* Mere luft mellem billeder 
+  /* Mere luft mellem billeder */
   .row,
   .row > .column {
     padding: 8px;
   }
 
-  /* 4 billeder per række på desktop 
+  /* 4 billeder per række på desktop */
   .column {
     width: 25%;
   }
 
-  /* Fjern dekorative linjer på desktop 
+  /* Fjern dekorative linjer på desktop */
   .content:before,
   .content:after {
     display: none;
   }
 
-  /* Knapper med mere luft 
+  /* Knapper med mere luft */
   .btn-container {
     gap: 16px;
   }
@@ -599,11 +595,11 @@ h4 {
   .btn {
     flex: 1;
     min-width: 100px;
-    font-size: 1.5vw; /* Mindre tekst på desktop 
+    font-size: 1.5vw; /* Mindre tekst på desktop */
     width: auto;
   }
 
-  /* Mindre tekst på billeder 
+  /* Mindre tekst på billeder */
   .content .font-vi h4 {
     font-size: 2vw;
   }
