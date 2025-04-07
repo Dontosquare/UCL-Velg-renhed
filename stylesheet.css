@@ -609,24 +609,38 @@ h4 {
     margin-bottom: 2%;
   }
 
-  .footer__header{
-    color: blue;
+  .footer{
     display: flex;
-    justify-content: start;
     flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .footer__header{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 2%;
   }
 
   .footer__text{
-    color: blue;
     display: flex;
-    justify-content: start;
+    justify-content: space-evenly;
     flex-direction: row;
+    margin-right: 20%;
+    margin-left: 20%;
+    padding: 2%;
   }
 
   .footer__icons{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer__disclaimer{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    padding-top: 20%
   }
 }
 
