@@ -557,17 +557,6 @@ h4 {
   box-sizing: border-box; 
   font-size: 6.2vw;
 }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-/* Sofie start */
-=======
-/* Container til frivillig-billeder */
-
->>>>>>> Stashed changes
-=======
-/* Container til frivillig-billeder */
-
->>>>>>> Stashed changes
 
 @media (min-width: 481px) {
   .header {
@@ -727,7 +716,7 @@ h4 {
   .footer__text {
     margin: 5px;
   }
-  
+}  
 
 
   /*
@@ -775,9 +764,9 @@ h4 {
     display: flex;
     padding-top: 50%;
   }
-  */
+  
 }
-
+*/
 @media (min-width: 481px) {
   /* Sofie start */
   h1 {
