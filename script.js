@@ -38,6 +38,7 @@ document.getElementById('stoet').onclick = function () {
 /*lav if else i signup letteren*/
 
 // Sofie
+
 filterSelection("alle")
 function filterSelection(c) {
   var x, i;
@@ -80,7 +81,6 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-
 
 // Mads section
 // her laver vi et array som hedder ungerådgiver og putter vores billeder ind
