@@ -392,7 +392,7 @@ nav {
 /* Sofie start */
 
 h1 {
-  font-family: 'Permanent marker';
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: #D4257D;
@@ -538,7 +538,6 @@ h4 {
   box-sizing: border-box; 
   font-size: 6.2vw;
 }
-/* Container til frivillig-billeder */
 /* Sofie start */
 
 @media (min-width: 481px) {
