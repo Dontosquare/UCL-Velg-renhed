@@ -90,7 +90,7 @@ body {
 
 .off-screen-menu.active {
     right: 0px;
-    z-index: 5;
+    z-index: 4;
 }
 
 nav {
@@ -164,6 +164,7 @@ nav {
   position: relative;
   margin-top: 10%;
   margin-left: auto;
+  z-index: -1;
 }
 
 
@@ -637,25 +638,28 @@ h4 {
     margin-top: 3%;
   }
 
-  .paragraph__text__typer{
-    margin-bottom: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
   .list__rewards {
     margin-left: 5%;
     margin-right: 5%;
   }
 
+  .paragraph__text__typer{
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+  }
+
   .paragraph__headline__regular {
     margin-left: 5%;
     margin-right: 5%;
+    text-align: left;
   }
 
   .paragraph__headline__tush {
     margin-left: 5%;
     margin-right: 5%;
+    text-align: left;
   }
 
   .greenbox__text_regular__start {
@@ -718,55 +722,6 @@ h4 {
   }
 }  
 
-
-  /*
-  .footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-
-  .footer__header{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;  
-  }
-
-  .footer__text{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    margin-right: 20%;
-    padding: 2%;
-  }
-
-  .footer__icons{
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .footer__disclaimer{
-    display: flex;
-    flex-direction: column;
-    margin: 2%;
-    padding-top: 20%
-  }
-
-  .footer__certifikat{
-    display: flex;
-    margin-top: auto;
-    padding-top: 20%;
-  }
-
-  .footer__rights{
-    display: flex;
-    padding-top: 50%;
-  }
-  
-}
-*/
 @media (min-width: 481px) {
   /* Sofie start */
   h1 {
