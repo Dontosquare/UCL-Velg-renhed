@@ -538,6 +538,8 @@ h4 {
   box-sizing: border-box; 
   font-size: 6.2vw;
 }
+/* Container til frivillig-billeder */
+/* Sofie start */
 
 @media (min-width: 481px) {
   .header {
@@ -708,7 +710,6 @@ h4 {
   */
 }
 
-/* Sofie slut */
 @media (min-width: 481px) {
   /* Sofie start */
   h1 {
@@ -755,6 +756,7 @@ h4 {
 
   .content h4 {
     font-size: inherit;
+    font-size: 2.8vw;
   }
 
 }
