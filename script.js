@@ -14,12 +14,7 @@ let burgerMenu = {
 }
 
 if (burgerMenu.menuItems.lenght > 0) {
-  for (i = 0; i < burgerMenu.menuItems.length; i++) {
-
-    const node = document.createElement('a');
-
-    const textnode = document.createTextNode(burgerMenu.menuItems[i]);
-  }
+  for (i = 0; i < burgerMenu.menuItems.length; i++) {}
 }
 
 
@@ -35,7 +30,6 @@ document.getElementById('headspaceFam').onclick = function () {
 document.getElementById('stoet').onclick = function () {
     location.href = 'https://headspace.dk/stoet/'
 }
-/*lav if else i signup letteren*/
 
 // Sofie
 
