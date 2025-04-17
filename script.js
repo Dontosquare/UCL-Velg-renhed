@@ -37,6 +37,8 @@ document.getElementById('stoet').onclick = function () {
 }
 
 // Sofie
+// Har taget udgangs punk fra en W3schools kode:
+https://www.w3schools.com/howto/howto_js_portfolio_filter.asp 
 
 filterSelection("alle")
 function filterSelection(c) {
