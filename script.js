@@ -36,52 +36,82 @@ document.getElementById('stoet').onclick = function () {
     location.href = 'https://headspace.dk/stoet/'
 }
 
-// Sofie
-// Har taget udgangs punk fra en W3schools kode:
-https://www.w3schools.com/howto/howto_js_portfolio_filter.asp 
+// -------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------
+// SOFIE KODE START
+// Har taget inspiration fra:
+// https://www.w3schools.com/howto/howto_js_portfolio_filter.asp 
+// Man kunne også bare have brugt "isotope" https://isotope.metafizzy.co slut prut
+// -------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------
 
-filterSelection("alle")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "alle") c = "";
-  for (i = 0; i < x.length; i++) {
-    RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
-  }
-}
+// Vent på at hele DOM'en er indlæst, før der køres noget kode
+document.addEventListener("DOMContentLoaded", function () {
+  // Vis alle frivillige som standard, når siden indlæses
+  filterSelection("alle");
 
-function AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
+  // Initialiser funktionaliteten for filterknapperne
+  initFilterButtons();
+});
 
-function RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+/**
+ * Filtrerer de viste frivillig-kort baseret på den valgte kategori.
+ * Tilføjer klassen "show" til elementer, der matcher kategorien, og fjerner den fra resten.
+ * 
+ * @param {string} category - Kategorien der skal filtreres efter (f.eks. "chat", "unge", "formidling" eller "alle").
+ */
+function filterSelection(category) {
+  const items = document.getElementsByClassName("column"); // Alle frivillig-elementer
+  const showClass = "show"; // Klassen der styrer synligheden
+
+  for (let i = 0; i < items.length; i++) {
+    // Fjern altid "show"-klassen først for at skjule alle elementer
+    items[i].classList.remove(showClass);
+
+    // Tilføj "show"-klassen hvis elementet matcher kategorien
+    // eller hvis "alle" er valgt (vis alt)
+    if (category === "alle" || items[i].classList.contains(category)) {
+      items[i].classList.add(showClass);
     }
   }
-  element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
+/**
+ * Tilføjer klik-events til hver filterknap.
+ * Når en knap bliver klikket:
+ * - Opdateres "active"-klassen for at fremhæve den valgte knap.
+ * - Galleriet bliver filtreret baseret på knappens data-filter attribut.
+ */
+function initFilterButtons() {
+  const btnContainer = document.getElementById("myBtnContainer"); // Beholderen for filterknapperne
+  if (!btnContainer) return; // Stop hvis beholderen ikke findes
+
+  const btns = btnContainer.getElementsByClassName("gallery__filter__btn"); // Alle filterknapper
+
+  for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      // Fjern "active"-klassen fra alle knapper
+      for (let j = 0; j < btns.length; j++) {
+        btns[j].classList.remove("active");
+      }
+
+      // Tilføj "active"-klassen til den knap, der blev klikket på
+      this.classList.add("active");
+
+      // Hent data-filter attributten fra den valgte knap
+      const category = this.getAttribute("data-filter");
+
+      // Kald filterfunktionen med den valgte kategori
+      filterSelection(category);
+    });
+  }
 }
+
+// -------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------
+// SOFIE KODE SLUT
+// -------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------
 
 // Mads section
 // her laver vi et array som hedder ungerådgiver og putter vores billeder ind

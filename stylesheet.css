@@ -421,7 +421,7 @@ nav {
 
 /* Sofie start */
 
-h1 {
+h2 {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -755,7 +755,7 @@ h4 {
 
 @media (min-width: 481px) {
   /* Sofie start */
-  h1 {
+  h2 {
     font-size: 4.5vw; /* Mindre skrift på større skærme */
   }
 
