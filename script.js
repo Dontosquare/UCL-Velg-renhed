@@ -41,14 +41,13 @@ document.getElementById('stoet').onclick = function () {
 // SOFIE KODE START
 // Har taget inspiration fra:
 // https://www.w3schools.com/howto/howto_js_portfolio_filter.asp 
-// Man kunne også bare have brugt "isotope" https://isotope.metafizzy.co slut prut
 // -------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------
 
 // Vent på at hele DOM'en er indlæst, før der køres noget kode
 document.addEventListener("DOMContentLoaded", function () {
   // Vis alle frivillige som standard, når siden indlæses
-  filterSelection("alle");
+  filterSelection("gallery__alle");
 
   // Initialiser funktionaliteten for filterknapperne
   initFilterButtons();
@@ -61,8 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
  * @param {string} category - Kategorien der skal filtreres efter (f.eks. "chat", "unge", "formidling" eller "alle").
  */
 function filterSelection(category) {
-  const items = document.getElementsByClassName("column"); // Alle frivillig-elementer
-  const showClass = "show"; // Klassen der styrer synligheden
+  const items = document.getElementsByClassName("gallery__column"); // Alle frivillig-elementer
+  const showClass = "gallery__show"; // Klassen der styrer synligheden
 
   for (let i = 0; i < items.length; i++) {
     // Fjern altid "show"-klassen først for at skjule alle elementer
@@ -70,7 +69,7 @@ function filterSelection(category) {
 
     // Tilføj "show"-klassen hvis elementet matcher kategorien
     // eller hvis "alle" er valgt (vis alt)
-    if (category === "alle" || items[i].classList.contains(category)) {
+    if (category === "gallery__alle" || items[i].classList.contains(category)) {
       items[i].classList.add(showClass);
     }
   }

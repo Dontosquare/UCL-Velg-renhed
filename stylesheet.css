@@ -445,26 +445,26 @@ h4 {
 }
 
 /* Række med flexbox til billedgrid */
-.row {
+.gallery__row {
   margin: 0.2rem -0.2rem;
   display: flex;
   flex-wrap: wrap;
 }
 
 /* Afstand mellem kolonner */
-.row,
-.row > .column {
+.gallery__row,
+.gallery__row > .gallery__column {
   padding: 3px;
 }
 
 /* Standard: 2 billeder per række på mobil */
-.column {
+.gallery__column {
   width: 50%;
   display: none; /* Skjul alle som standard */
 }
 
 /* Billedstyling - fylder hele containeren */
-.content img {
+.gallery__polaroid img {
   width: 100%;       
   height: auto;     
   object-fit: cover; 
@@ -472,7 +472,7 @@ h4 {
 }
 
 /* Container til hvert billede + tekst */
-.content {
+.gallery__polaroid {
   position: relative;
   display: inline-block;
   filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15));
@@ -480,7 +480,7 @@ h4 {
 }
 
 /* Dekorative linjer (kun på mobil) */
-.content:before {
+.gallery__polaroid:before {
   position: absolute;
   top: 0;
   left: -8px;
@@ -489,7 +489,7 @@ h4 {
   border-radius: 2px 0 0 2px;
 }
 
-.content:after {
+.gallery__polaroid:after {
   position: absolute;
   top: 0;
   right: -8px;
@@ -499,7 +499,7 @@ h4 {
 }
 
 /* Vis filtrerede elementer */
-.show {
+.gallery__show {
   display: block;
 }
 
@@ -542,7 +542,7 @@ h4 {
 }
 
 /* Special-styling til "VI"-tekst på billeder */
-.content .font-vi h4 {
+.gallery__polaroid .gallery__font-vi h4 {
   color: #fff9f0;
   font-size: 4.5vw;
   left: 50%; 
@@ -553,7 +553,7 @@ h4 {
 }
 
 /* Standard tekst på billeder */
-.content h4 {
+.gallery__polaroid h4 {
   position: absolute; 
   bottom: 0; 
   rotate: 8deg;
@@ -568,6 +568,8 @@ h4 {
   box-sizing: border-box; 
   font-size: 6.2vw;
 }
+
+/* Sofie slut */
 
 @media (min-width: 481px) {
   nav {
@@ -751,9 +753,7 @@ h4 {
   .footer__text {
     margin: 5px;
   }
-}  
 
-@media (min-width: 481px) {
   /* Sofie start */
   h2 {
     font-size: 4.5vw; /* Mindre skrift på større skærme */
@@ -764,19 +764,19 @@ h4 {
   }
 
   /* Mere luft mellem billeder */
-  .row,
-  .row > .column {
+  .gallery__row,
+  .gallery__row > .gallery__column {
     padding: 8px;
   }
 
   /* 4 billeder per række på desktop */
-  .column {
+  .gallery__column {
     width: 25%;
   }
 
   /* Fjern dekorative linjer på desktop */
-  .content:before,
-  .content:after {
+  .gallery__polaroid:before,
+  .gallery__polaroid:after {
     display: none;
   }
 
@@ -793,11 +793,11 @@ h4 {
   }
 
   /* Mindre tekst på billeder */
-  .content .font-vi h4 {
+  .gallery__polaroid .gallery__font-vi h4 {
     font-size: 2vw;
   }
 
-  .content h4 {
+  .gallery__polaroid h4 {
     font-size: inherit;
     font-size: 2.8vw;
   }
