@@ -49,7 +49,7 @@ body {
     
 }
 
-.listofstuff {
+.ham-menu__list {
     list-style-type: none;
     cursor: pointer;
     color: #81b428;
@@ -616,7 +616,7 @@ h4 {
     font-size: 50px;
   }
 
-  .somFrivillig {
+  .header__somfrivillig {
     margin-left: 1%;
   }
 
